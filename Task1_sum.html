@@ -12,12 +12,13 @@
         <script src="lib/qunit.js"></script>
         <!-- Load local lib and tests. -->
         <script src="test/test.js"></script>
+        <script src="test/test2.js"></script>
         <script src="js/sum_module.js"></script>
     </head>
     <body>
 
-    <div id="qunit"></div>
-   <!-- <div id="qunit-fixture">this had better work.</div> -->
+   <div id="qunit"></div>
+    <!--<div id="qunit-fixture">this had better work.</div> -->
 
     ======================================================Task 1
 
@@ -25,16 +26,21 @@
             'use strict';
 
            var s=sum();
-         //    document.write("<p>");
-         //   document.write("-");
-         //   document.write(s);
-         //   document.write("<p>1 must be    ");
-         //   document.write(s(1));
-         //   document.write("<p>3 must be     ");
-         //   document.write(s(1)(2));
-         //   document.write("<p>12 must be     ");
-         //   document.write(s(3)(4)(5));
-         //   document.write("<p> - Done");
+
+            alert(s); // 0
+            alert(s(1)); // 1
+            alert(s(1)(2)); //3
+            alert(s(3)(4)(5)); // 12
+             document.write("<p>");
+            document.write("-");
+            document.write(s);
+            document.write("<p>1 must be    ");
+           document.write(s(1));
+            document.write("<p>3 must be     ");
+            document.write(s(1)(2));
+            document.write("<p>12 must be     ");
+            document.write(s(3)(4)(5));
+            document.write("<p> - Done");
 
 
         </script>
